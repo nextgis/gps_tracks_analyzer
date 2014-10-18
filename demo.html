@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPS Tracker.</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="style.css">
+
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+</head>
+<body>
+	<header>
+		<h1>Трекинг перемещений</h1>
+	</header>	
+	<div class="wrapper">
+		<div class="left" id="tableBlock">
+			<p>Данные за последние 5 дней, включая сегодняшний</p>
+		</div>
+		<div class="right" id="mapBlock">
+			<p>Треки на карте</p>
+			<div id="map" style="width: 600px; height: 600px"></div>
+		</div>
+	</div>
+	<script src="gpsTracking.js"></script>
+</body>
+</html>
