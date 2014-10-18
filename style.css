@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  overflow-y: hidden; 
+}
+
+.wrapper:after {
+  content: '';
+  position: absolute;
+  /*width: 1025px;*/
+  width: 90%;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+
+.right {
+  float: right;
+  width: 40%;
+  margin-right: 10px;
+}
+
+.tabulated th, td {
+  padding: 3px 5px;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+
+.tabulated th {
+background: #006a72;
+color: #fff;
+}
+
+.tabulated th:hover {
+color: #fff;
+text-decoration: underline;
+}
+
+.tabulated td {
+background: #D8F8F0;
+color: #000;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.icon {
+  cursor: pointer;
+}
