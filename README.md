@@ -24,3 +24,18 @@ time_utc	timestamp
 );
 SELECT AddGeometryColumn('routing', 'waypoints', 'point', 4326, 'POINT', 2);
 ```
+For running demo you should create simple http server with proxy, here is example for [nginx](http://nginx.org/ru/) config:
+```
+server {
+        root /path_to_demo.html_on_your_machine;
+        listen 127.0.0.1:6547;
+
+        location / {
+                root /path_to_demo.html_on_your_machine;
+        }
+        location /raw {
+                # IP where dbDataToApp.js is listening
+                proxy_pass http://127.0.0.1:6545/;
+        }
+}
+```
