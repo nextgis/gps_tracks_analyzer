@@ -11,6 +11,7 @@ Servers require some packages: [pg](https://www.npmjs.org/package/pg), [dateform
 
 Example of table in PostgreSQL database:
 ```SQL
+CREATE SCHEMA IF NOT EXISTS routing;
 CREATE TABLE IF NOT EXISTS routing.waypoints (
 uid	varchar(50),
 acc	real,
